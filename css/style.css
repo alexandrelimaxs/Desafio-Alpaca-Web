@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+.header{
+    background-color: blueviolet;
+}
+
+.header img {
+    height: 60px;
+}
+
+.header ul {
+    display: inline;
+}
