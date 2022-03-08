@@ -1,0 +1,85 @@
+* {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  background-color: #F7F7F7;
+}
+
+#header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+#header .container img {
+  width: 180px;
+}
+
+#header .container .header-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+}
+
+#header .container .header-list .header-links {
+  text-decoration: none;
+  padding: 0.5em;
+  font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 1em;
+}
+
+#introducao {
+  background-image: url(/img/code.jpg);
+}
+
+#introducao .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#introducao .container .texto_introducao {
+  max-width: 700px;
+  gap: 100px;
+}
+
+#introducao .container .texto_introducao h1 {
+  font-size: 4.5em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+
+#introducao .container .texto_introducao p {
+  font-size: 1em;
+  font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
+}
+
+#introducao img {
+  width: 400px;
+}
+/*# sourceMappingURL=style.css.map */
