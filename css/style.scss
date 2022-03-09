@@ -28,12 +28,10 @@
         .header-list {
             list-style: none;
             display: flex;
-            gap: 1.5em;
+            gap: 2em;
     
             .header-links {
-                @include font-corpo
-                font-size: 1.2em;
-                padding: 0.5em;
+                @include font-nav
             }
         }
     }
@@ -63,10 +61,7 @@
             .highlight-text{
                 @include font-corpo-highlight($laranja)
             }
-
         }
-        
-
     }
 
     img {

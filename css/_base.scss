@@ -37,4 +37,13 @@ $font-size-corpo: 1em;
     color: $cor;
 }
 
+@mixin font-nav {
+    font-size: $font-size-corpo;
+    font-family: $font-style-corpo;
+    line-height: 180%;
+    text-decoration: none;
+    color: $preto;
+    font-size: 1.2em;
+}
+
 

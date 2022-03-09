@@ -36,7 +36,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.5em;
+  gap: 2em;
 }
 
 #header .container .header-list .header-links {
@@ -46,7 +46,6 @@
   text-decoration: none;
   color: #000000;
   font-size: 1.2em;
-  padding: 0.5em;
 }
 
 #introducao {
