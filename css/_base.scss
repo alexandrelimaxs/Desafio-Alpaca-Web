@@ -4,8 +4,33 @@ $cinza-claro: #F7F7F7;
 $azul: #317FC1;
 $preto: #000000;
 
-$font-style-corpo: 'Quicksand', Open Sans, Arial, Helvetica, sans-serif;
-$font-size-corpo: 1em;
 
 $font-style-titulo: 'Raleway', sans-serif;
 $font-size-titulo: 4.5em;
+
+$font-style-corpo: 'Quicksand', Open Sans, Arial, Helvetica, sans-serif;
+$font-size-corpo: 1em;
+
+// ESTILOS PRONTOS DE TEXTO
+
+
+@mixin font-title {
+    font-size: $font-size-titulo;
+    font-family: $font-style-titulo;
+    text-transform: uppercase;    
+}
+
+@mixin font-corpo {
+    font-size: $font-size-corpo;
+    font-family: $font-style-corpo;
+    line-height: 180%;
+    text-decoration: none;
+}
+
+@mixin font-corpo-highlight ($theme) {
+    font-size: $font-size-corpo;
+    font-family: $font-style-corpo;
+    line-height: 180%;
+    text-transform: uppercase;
+    color: $theme;
+}

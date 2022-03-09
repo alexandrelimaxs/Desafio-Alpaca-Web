@@ -40,11 +40,13 @@
 }
 
 #header .container .header-list .header-links {
-  text-decoration: none;
-  padding: 0.5em;
-  font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
-  color: #000000;
   font-size: 1em;
+  font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
+  line-height: 180%;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 0.5em;
+  color: #000000;
 }
 
 #introducao {
@@ -64,19 +66,31 @@
 }
 
 #introducao .container .texto_introducao {
-  max-width: 700px;
-  gap: 100px;
+  max-width: 600px;
+  display: -ms-grid;
+  display: grid;
+  gap: 40px;
 }
 
 #introducao .container .texto_introducao h1 {
   font-size: 4.5em;
   font-family: "Raleway", sans-serif;
-  font-weight: 900;
+  text-transform: uppercase;
 }
 
 #introducao .container .texto_introducao p {
   font-size: 1em;
   font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
+  line-height: 180%;
+  text-decoration: none;
+}
+
+#introducao .container .texto_introducao .highlight-text {
+  font-size: 1em;
+  font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
+  line-height: 180%;
+  text-transform: uppercase;
+  color: #F69337;
 }
 
 #introducao img {

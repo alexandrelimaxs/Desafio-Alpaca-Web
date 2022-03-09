@@ -31,18 +31,16 @@
             gap: 1.5em;
     
             .header-links {
-                text-decoration: none;
+                @include font-corpo
+                font-size: 1.2em;
                 padding: 0.5em;
-                font-family: $font-style-corpo;
                 color: $preto;
-                font-size: $font-size-corpo;
             }
         }
     }
 }
 
 #introducao{
-
     background-image: url(/img/code.jpg);
 
     .container{
@@ -51,19 +49,22 @@
         justify-content: space-between;
         
         .texto_introducao{
-            max-width: 700px;
-            gap: 100px;
+            max-width: 600px;
+            display: grid;
+            gap: 40px;
 
             h1{
-                font-size: $font-size-titulo;
-                font-family: $font-style-titulo;
-                font-weight: 900;
+                @include font-title
             }
 
             p{
-                font-size: $font-size-corpo;
-                font-family: $font-style-corpo;
+                @include font-corpo
             }
+
+            .highlight-text{
+                @include font-corpo-highlight($laranja)
+            }
+
         }
         
 
