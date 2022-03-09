@@ -44,9 +44,9 @@
   font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
   line-height: 180%;
   text-decoration: none;
+  color: #000000;
   font-size: 1.2em;
   padding: 0.5em;
-  color: #000000;
 }
 
 #introducao {
@@ -76,6 +76,7 @@
   font-size: 4.5em;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
+  color: #000000;
 }
 
 #introducao .container .texto_introducao p {
@@ -83,6 +84,7 @@
   font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
   line-height: 180%;
   text-decoration: none;
+  color: #000000;
 }
 
 #introducao .container .texto_introducao .highlight-text {

@@ -18,6 +18,7 @@ $font-size-corpo: 1em;
     font-size: $font-size-titulo;
     font-family: $font-style-titulo;
     text-transform: uppercase;    
+    color: $preto;
 }
 
 @mixin font-corpo {
@@ -25,12 +26,15 @@ $font-size-corpo: 1em;
     font-family: $font-style-corpo;
     line-height: 180%;
     text-decoration: none;
+    color: $preto;
 }
 
-@mixin font-corpo-highlight ($theme) {
+@mixin font-corpo-highlight ($cor) {
     font-size: $font-size-corpo;
     font-family: $font-style-corpo;
     line-height: 180%;
     text-transform: uppercase;
-    color: $theme;
+    color: $cor;
 }
+
+
