@@ -87,9 +87,9 @@
   background-color: #F69337;
   width: 1em;
   height: 0.08em;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: right;
+      -ms-grid-row-align: right;
+      align-self: right;
   position: absolute;
   bottom: -15px;
   left: 0px;
@@ -132,5 +132,53 @@
 
 #introducao img {
   width: 400px;
+}
+
+#servicos .container {
+  padding: 80px 0px;
+  display: -ms-grid;
+  display: grid;
+  gap: 40px;
+}
+
+#servicos h1 {
+  font-size: 4.5em;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+  text-align: right;
+}
+
+#servicos h1::after {
+  content: "";
+  background-color: #F69337;
+  width: 1em;
+  height: 0.08em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  bottom: -15px;
+  right: 0px;
+}
+
+#servicos .servicos-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+#servicos .card {
+  background-color: grey;
+  display: -ms-grid;
+  display: grid;
+  height: 250px;
+  width: 200px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#servicos .card h2 {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

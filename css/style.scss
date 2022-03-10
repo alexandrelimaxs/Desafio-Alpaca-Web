@@ -87,3 +87,40 @@
         width: 400px;
     }
 }
+
+#servicos{
+
+    .container{
+        padding: 80px 0px;
+        display: grid;
+        gap: 40px;
+    }
+
+    h1 {
+        @include font-title
+        text-align: right;
+    }
+
+    h1::after{
+        @include separador-titulo-right
+    }
+
+    .servicos-grid{
+        display: grid;
+    }
+
+    .card{
+        background-color: grey;
+        display: grid;
+        height: 250px;
+        width: 200px;
+        padding: 20px;
+        border-radius: 5px;
+
+
+        h2{
+            text-align: center;
+        }
+
+    }
+}
