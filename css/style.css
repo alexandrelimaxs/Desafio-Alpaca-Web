@@ -5,7 +5,7 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -50,6 +50,8 @@
 
 #introducao {
   background-image: url(/img/code.jpg);
+  background-position: center top;
+  background-size: 100%;
 }
 
 #introducao .container {
@@ -62,12 +64,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 80px 0px;
 }
 
 #introducao .container .texto_introducao {
-  max-width: 600px;
   display: -ms-grid;
   display: grid;
+  max-width: 600px;
   gap: 40px;
 }
 
@@ -76,6 +79,20 @@
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #000000;
+  position: relative;
+}
+
+#introducao .container .texto_introducao h1::after {
+  content: "";
+  background-color: #F69337;
+  width: 1em;
+  height: 0.08em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
 }
 
 #introducao .container .texto_introducao p {
@@ -92,6 +109,25 @@
   line-height: 180%;
   text-transform: uppercase;
   color: #F69337;
+}
+
+#introducao .container .texto_introducao .container_botoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3em;
+}
+
+#introducao .container .texto_introducao .container_botoes a {
+  background-color: #279F84;
+  padding: 0.6em 2em;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
+  line-height: 180%;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2em;
 }
 
 #introducao img {

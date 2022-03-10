@@ -1,9 +1,15 @@
+// CORES
+
 $laranja: #F69337;
 $verde: #279F84;
 $cinza-claro: #F7F7F7;
 $azul: #317FC1;
 $preto: #000000;
+$branco: #ffffff;
 
+
+
+// VARIAVEIS TIPOGRÁFICAS
 
 $font-style-titulo: 'Raleway', sans-serif;
 $font-size-titulo: 4.5em;
@@ -19,6 +25,7 @@ $font-size-corpo: 1em;
     font-family: $font-style-titulo;
     text-transform: uppercase;    
     color: $preto;
+    position: relative;
 }
 
 @mixin font-corpo {
@@ -37,13 +44,35 @@ $font-size-corpo: 1em;
     color: $cor;
 }
 
-@mixin font-nav {
+@mixin font-botao ($cor) {
     font-size: $font-size-corpo;
     font-family: $font-style-corpo;
     line-height: 180%;
     text-decoration: none;
-    color: $preto;
+    color: $cor;
     font-size: 1.2em;
 }
 
+// TRAÇO DECORATIVO
 
+@mixin separador-titulo-left {
+    content: "";
+    background-color: $laranja;
+    width: 1em;
+    height: 0.08em;
+    align-self: center;
+    position: absolute;
+    bottom: -15px;
+    left: 0px
+}
+
+@mixin separador-titulo-right {
+    content: "";
+    background-color: $laranja;
+    width: 1em;
+    height: 0.08em;
+    align-self: center;
+    position: absolute;
+    bottom: -15px;
+    right: 0px
+}
