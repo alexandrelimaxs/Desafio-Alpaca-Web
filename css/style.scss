@@ -12,6 +12,10 @@
     margin-right: auto;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #header{
     background-color: $cinza-claro;
 
