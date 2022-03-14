@@ -5,6 +5,7 @@ $verde: #279F84;
 $cinza-claro: #F7F7F7;
 $azul: #317FC1;
 $preto: #000000;
+$cinza: #333333;
 $branco: #ffffff;
 
 
@@ -14,11 +15,12 @@ $branco: #ffffff;
 $font-style-titulo: 'Raleway', sans-serif;
 $font-size-titulo: 4.5em;
 
-$font-style-corpo: 'Quicksand', Open Sans, Arial, Helvetica, sans-serif;
+$font-style-corpo: 'Quicksand', sans-serif;
 $font-size-corpo: 1em;
+$font-size-card-title: 1.2em;
+$font-size-card-corpo: 0.9em;
 
 // ESTILOS PRONTOS DE TEXTO
-
 
 @mixin font-title {
     font-size: $font-size-titulo;
@@ -28,12 +30,12 @@ $font-size-corpo: 1em;
     position: relative;
 }
 
-@mixin font-corpo {
+@mixin font-corpo ($cor) {
     font-size: $font-size-corpo;
     font-family: $font-style-corpo;
     line-height: 180%;
     text-decoration: none;
-    color: $preto;
+    color: $cor;
 }
 
 @mixin font-corpo-highlight ($cor) {
@@ -51,6 +53,24 @@ $font-size-corpo: 1em;
     text-decoration: none;
     color: $cor;
     font-size: 1.2em;
+}
+
+@mixin font-card-title ($cor) {
+    font-size: $font-size-card-title;
+    font-family: $font-style-corpo;
+    line-height: 180%;
+    text-decoration: none;
+    color: $cor;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@mixin font-card-corpo ($cor) {
+    font-size: $font-size-card-corpo; 
+    font-family: $font-style-corpo;
+    line-height: 130%;
+    text-decoration: none;
+    color: $cor;
 }
 
 // TRAÇO DECORATIVO
@@ -75,4 +95,69 @@ $font-size-corpo: 1em;
     position: absolute;
     bottom: -15px;
     right: 0px
+}
+
+// SOMBRA
+
+@mixin sombra {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;    
+}
+
+// CARD
+
+@mixin card ($cor) {
+    
+    background-image: linear-gradient(to right bottom,$cor 10%, $branco 10%);
+
+    background-size: 100% 100%;
+    transition: background-size 0.5s ease-in-out;
+    -webkit-transition: background 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    -o-transition: background 0.5s ease-in-out;
+    
+    @include sombra;
+    
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
+    height: 210px;
+    width: 220px;
+    padding: 25px 20px;
+    border-radius: 5px;
+
+    svg {
+        height: 2em;
+        fill: $cinza;
+        transition: fill 0.5s ease-in-out;
+    }
+
+    h2{
+        @include font-card-title($cinza)
+        transition: color 0.5s ease-in-out;
+    }
+    
+    p {
+        @include font-card-corpo($cinza)
+        transition: color 0.5s ease-in-out;
+    }
+    
+
+    &:hover{
+        background-size: 1000% 1000%;
+
+        svg {
+            height: 2em;
+            fill: $branco;
+        }
+        h2{
+            @include font-card-title($branco)
+        }
+
+        p {
+            @include font-card-corpo($branco)
+        }
+    }
+    
 }

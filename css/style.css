@@ -41,7 +41,7 @@
 
 #header .container .header-list .header-links {
   font-size: 1em;
-  font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
   line-height: 180%;
   text-decoration: none;
   color: #000000;
@@ -97,15 +97,15 @@
 
 #introducao .container .texto_introducao p {
   font-size: 1em;
-  font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
   line-height: 180%;
   text-decoration: none;
-  color: #000000;
+  color: #333333;
 }
 
 #introducao .container .texto_introducao .highlight-text {
   font-size: 1em;
-  font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
   line-height: 180%;
   text-transform: uppercase;
   color: #F69337;
@@ -123,7 +123,7 @@
   padding: 0.6em 2em;
   border-radius: 5px;
   font-size: 1em;
-  font-family: "Quicksand", Open Sans, Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
   line-height: 180%;
   text-decoration: none;
   color: #ffffff;
@@ -134,11 +134,15 @@
   width: 400px;
 }
 
+#servicos {
+  background: linear-gradient(30deg, #ffffff 35%, #317FC1 35%, #317FC1 70%, #ffffff 70%);
+}
+
 #servicos .container {
   padding: 80px 0px;
   display: -ms-grid;
   display: grid;
-  gap: 40px;
+  gap: 80px;
 }
 
 #servicos h1 {
@@ -164,21 +168,340 @@
 }
 
 #servicos .servicos-grid {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#servicos .card {
-  background-color: grey;
+#servicos .card-azul {
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(10%, #317FC1), color-stop(10%, #ffffff));
+  background-image: linear-gradient(to right bottom, #317FC1 10%, #ffffff 10%);
+  background-size: 100% 100%;
+  -webkit-transition: background-size 0.5s ease-in-out;
+  transition: background-size 0.5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   display: -ms-grid;
   display: grid;
-  height: 250px;
-  width: 200px;
-  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  text-align: center;
+  height: 210px;
+  width: 220px;
+  padding: 25px 20px;
   border-radius: 5px;
 }
 
-#servicos .card h2 {
+#servicos .card-azul svg {
+  height: 2em;
+  fill: #333333;
+  -webkit-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
+}
+
+#servicos .card-azul h2 {
+  font-size: 1.2em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 180%;
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+#servicos .card-azul p {
+  font-size: 0.9em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 130%;
+  text-decoration: none;
+  color: #333333;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+#servicos .card-azul:hover {
+  background-size: 1000% 1000%;
+}
+
+#servicos .card-azul:hover svg {
+  height: 2em;
+  fill: #ffffff;
+}
+
+#servicos .card-azul:hover h2 {
+  font-size: 1.2em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 180%;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#servicos .card-azul:hover p {
+  font-size: 0.9em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 130%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#servicos .card-laranja {
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(10%, #F69337), color-stop(10%, #ffffff));
+  background-image: linear-gradient(to right bottom, #F69337 10%, #ffffff 10%);
+  background-size: 100% 100%;
+  -webkit-transition: background-size 0.5s ease-in-out;
+  transition: background-size 0.5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
   text-align: center;
+  height: 210px;
+  width: 220px;
+  padding: 25px 20px;
+  border-radius: 5px;
+}
+
+#servicos .card-laranja svg {
+  height: 2em;
+  fill: #333333;
+  -webkit-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
+}
+
+#servicos .card-laranja h2 {
+  font-size: 1.2em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 180%;
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+#servicos .card-laranja p {
+  font-size: 0.9em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 130%;
+  text-decoration: none;
+  color: #333333;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+#servicos .card-laranja:hover {
+  background-size: 1000% 1000%;
+}
+
+#servicos .card-laranja:hover svg {
+  height: 2em;
+  fill: #ffffff;
+}
+
+#servicos .card-laranja:hover h2 {
+  font-size: 1.2em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 180%;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#servicos .card-laranja:hover p {
+  font-size: 0.9em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 130%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#servicos .card-verde {
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(10%, #279F84), color-stop(10%, #ffffff));
+  background-image: linear-gradient(to right bottom, #279F84 10%, #ffffff 10%);
+  background-size: 100% 100%;
+  -webkit-transition: background-size 0.5s ease-in-out;
+  transition: background-size 0.5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  text-align: center;
+  height: 210px;
+  width: 220px;
+  padding: 25px 20px;
+  border-radius: 5px;
+}
+
+#servicos .card-verde svg {
+  height: 2em;
+  fill: #333333;
+  -webkit-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
+}
+
+#servicos .card-verde h2 {
+  font-size: 1.2em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 180%;
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+#servicos .card-verde p {
+  font-size: 0.9em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 130%;
+  text-decoration: none;
+  color: #333333;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+#servicos .card-verde:hover {
+  background-size: 1000% 1000%;
+}
+
+#servicos .card-verde:hover svg {
+  height: 2em;
+  fill: #ffffff;
+}
+
+#servicos .card-verde:hover h2 {
+  font-size: 1.2em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 180%;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#servicos .card-verde:hover p {
+  font-size: 0.9em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 130%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#sobre .container {
+  display: -ms-grid;
+  display: grid;
+  gap: 80px;
+  padding: 80px 0px;
+}
+
+#sobre .container h1 {
+  font-size: 4.5em;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+}
+
+#sobre .container h1::after {
+  content: "";
+  background-color: #F69337;
+  width: 1em;
+  height: 0.08em;
+  -ms-flex-item-align: right;
+      -ms-grid-row-align: right;
+      align-self: right;
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+}
+
+#sobre .container .sobre-conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#sobre .container .sobre-conteudo img {
+  width: 500px;
+}
+
+#sobre .container .sobre-conteudo .texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#sobre .container .sobre-conteudo .texto .texto-vertical {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  display: inline-block;
+}
+
+#sobre .container .sobre-conteudo .texto .texto-conteudo {
+  font-size: 1em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 180%;
+  text-decoration: none;
+  color: #333333;
+  width: 500px;
+}
+
+#sobre .container .sobre-conteudo .texto .texto-conteudo .highlight-text-azul {
+  font-size: 1em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 180%;
+  text-transform: uppercase;
+  color: #317FC1;
+}
+
+#sobre .container .sobre-conteudo .texto .texto-conteudo .highlight-text-verde {
+  font-size: 1em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 180%;
+  text-transform: uppercase;
+  color: #279F84;
+}
+
+#sobre .container .sobre-conteudo .texto .texto-conteudo .highlight-text-laranja {
+  font-size: 1em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 180%;
+  text-transform: uppercase;
+  color: #F69337;
 }
 /*# sourceMappingURL=style.css.map */

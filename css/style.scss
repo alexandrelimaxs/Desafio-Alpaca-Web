@@ -62,7 +62,7 @@
             }
 
             p{
-                @include font-corpo
+                @include font-corpo($cinza)
             }
 
             .highlight-text{
@@ -77,23 +77,24 @@
                     background-color: $verde;
                     padding: 0.6em 2em;
                     border-radius: 5px;
-                    @include font-botao($branco)
+                    @include font-botao($branco);
                 }
             }
         }
     }
-
+    
     img {
         width: 400px;
     }
 }
 
 #servicos{
+    background: linear-gradient(30deg, $branco 35%, $azul 35%, $azul 70%, $branco 70%);
 
     .container{
         padding: 80px 0px;
         display: grid;
-        gap: 40px;
+        gap: 80px;
     }
 
     h1 {
@@ -106,21 +107,72 @@
     }
 
     .servicos-grid{
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: center;
     }
 
-    .card{
-        background-color: grey;
+    .card-azul{
+        @include card($azul)
+    }
+    .card-laranja{
+        @include card($laranja)
+    }
+    .card-verde{
+        @include card($verde)
+    }
+    
+ }
+
+#sobre{
+    .container{
         display: grid;
-        height: 250px;
-        width: 200px;
-        padding: 20px;
-        border-radius: 5px;
+        gap: 80px;
+        padding: 80px 0px;
 
-
-        h2{
-            text-align: center;
+        h1{
+            @include font-title
         }
 
+        h1::after{
+            @include separador-titulo-left
+        }
+
+        .sobre-conteudo{
+            display: flex;
+            justify-content: space-between;
+
+            img{
+                width: 500px;
+            }
+
+            .texto{
+                display: flex;
+
+                .texto-vertical{
+                    transform: rotate(270deg);
+                    display: inline-block;
+                }
+
+                .texto-conteudo{
+                    @include font-corpo($cinza)
+                    width: 500px;
+
+                    .highlight-text-azul{
+                        @include font-corpo-highlight($azul)
+                    }
+                    
+                    .highlight-text-verde{
+                        @include font-corpo-highlight($verde)
+                    }
+
+                    .highlight-text-laranja{
+                        @include font-corpo-highlight($laranja)
+                    }
+                }
+            }
+
+        }
     }
 }
