@@ -208,30 +208,9 @@
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
-            // width: 100vw;
 
             .card-cliente{
-                display: grid;
-                align-content: center;
-                background-color: $branco;
-                border-radius: 5px;
-                padding: 40px;
-                border: 1px solid $cinza-claro-medio;
-                transition: border-color 0.3s;
-                height: 120px;
-                // @include sombra
-                
-
-                img{
-                    max-width: 230px;
-                    max-height: 120px;
-                    transition: 0.3s;
-                }
-            }
-
-            .card-cliente:hover{
-                border-color: $laranja;
-                img{ transform: scale(1.1) }
+                @include card-clientes
             }
         }
     }

@@ -568,17 +568,17 @@
   display: grid;
   -ms-flex-line-pack: center;
       align-content: center;
-  background-color: #ffffff;
+  height: 120px;
+  padding: 20px;
   border-radius: 5px;
-  padding: 40px;
   border: 1px solid #eee;
   -webkit-transition: border-color 0.3s;
   transition: border-color 0.3s;
-  height: 120px;
+  background-color: #ffffff;
 }
 
 #clientes .container .container-clientes .card-cliente img {
-  max-width: 230px;
+  max-width: 200px;
   max-height: 120px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
