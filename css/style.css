@@ -5,7 +5,7 @@
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -52,6 +52,11 @@
   background-image: url(/img/code.jpg);
   background-position: center top;
   background-size: 100%;
+}
+
+#introducao .mascara {
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #279F84));
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 50%, #279F84 50%);
 }
 
 #introducao .container {
@@ -118,8 +123,20 @@
   gap: 3em;
 }
 
-#introducao .container .texto_introducao .container_botoes a {
+#introducao .container .texto_introducao .container_botoes .botao-contato {
   background-color: #279F84;
+  padding: 0.6em 2em;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: "Quicksand", sans-serif;
+  line-height: 180%;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+#introducao .container .texto_introducao .container_botoes .botao-clientes {
+  background-color: #317FC1;
   padding: 0.6em 2em;
   border-radius: 5px;
   font-size: 1em;

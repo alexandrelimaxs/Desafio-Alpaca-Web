@@ -9,6 +9,7 @@ $cinza: #333333;
 $branco: #ffffff;
 $cinza-claro-medio: #eee;
 $cinza-medio: #aaa;
+$transparente: rgba(0,0,0,0);
 
 
 
@@ -187,4 +188,13 @@ $font-size-card-corpo: 0.9em;
         img{ transform: scale(1.1) }
         border-color: $laranja;
     }
+}
+
+// BOTÃO
+
+@mixin botao ($cor) {
+    background-color: $cor;
+    padding: 0.6em 2em;
+    border-radius: 5px;
+    @include font-botao($branco);
 }
