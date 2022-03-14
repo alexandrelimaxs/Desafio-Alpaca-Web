@@ -142,22 +142,31 @@
         .sobre-conteudo{
             display: flex;
             justify-content: space-between;
+            gap: 100px;
 
             img{
                 width: 500px;
             }
 
             .texto{
-                display: flex;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                justify-items: center;
+                align-items: center;
 
                 .texto-vertical{
-                    transform: rotate(270deg);
-                    display: inline-block;
+                    transform: rotate(180deg);
+                    writing-mode:vertical-rl;
+
+                    font-family: $font-style-corpo;
+                    font-size: 4em;
+                    color: $cinza-medio;
                 }
 
                 .texto-conteudo{
                     @include font-corpo($cinza)
-                    width: 500px;
+                    display: grid;
+                    gap: 1em;
 
                     .highlight-text-azul{
                         @include font-corpo-highlight($azul)
@@ -173,6 +182,57 @@
                 }
             }
 
+        }
+    }
+}
+
+#clientes{
+    background: linear-gradient(150deg, $branco 35%, $cinza-claro-medio 35%, $cinza-claro-medio 70%, $branco 70%);
+
+    .container{
+        display: grid;
+        gap: 80px;
+        padding: 80px 0px;
+
+        h1 {
+            @include font-title
+            text-align: right;
+        }
+
+        h1::after{
+            @include separador-titulo-right
+        }
+
+        .container-clientes{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            // width: 100vw;
+
+            .card-cliente{
+                display: grid;
+                align-content: center;
+                background-color: $branco;
+                border-radius: 5px;
+                padding: 40px;
+                border: 1px solid $cinza-claro-medio;
+                transition: border-color 0.3s;
+                height: 120px;
+                // @include sombra
+                
+
+                img{
+                    max-width: 230px;
+                    max-height: 120px;
+                    transition: 0.3s;
+                }
+            }
+
+            .card-cliente:hover{
+                border-color: $laranja;
+                img{ transform: scale(1.1) }
+            }
         }
     }
 }
