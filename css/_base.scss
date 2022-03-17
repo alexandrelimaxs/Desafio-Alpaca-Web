@@ -193,8 +193,27 @@ $font-size-card-corpo: 0.9em;
 // BOTÃO
 
 @mixin botao ($cor) {
-    background-color: $cor;z
+    background-color: $cor;
     padding: 0.6em 2em;
     border-radius: 5px;
     @include font-botao($branco);
 }
+
+
+
+// GELECA
+
+@keyframes geleca {
+    0%, 100% {
+      border-radius: 40% 21% 71% 39% / 0% 0% 100% 81%;
+    }
+    25% {
+      border-radius: 96% 17% 37% 64% / 91% 14% 21% 27% ; 
+    }
+    50% {
+      border-radius: 15% 89% 14% 17% / 56% 93% 4% 10% ; 
+    }
+    75% {
+      border-radius: 6% 86% 75% 8% / 4% 24% 74% 3%;
+    }
+  }
