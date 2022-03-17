@@ -82,35 +82,14 @@ html{
                 gap: 3em;
                 .botao-contato {
                     @include botao($verde);
-                    position: relative;
-                }
-                .botao-contato::before{
-                    border-radius: 30% 70% 72% 28% / 0% 0% 100% 100%;
-                    background-color: #000;
-                    box-sizing: border-box;
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    top: 5%;
-                    left: 0%;
-                    bottom: 5%;
-                    right: 0%;
-                    animation-duration: 6s;
-                    animation-iteration-count: infinite;
-                    filter: opacity(0.1);
-                }
                 
-                .botao-contato:hover {
-                    animation-name: geleca;
-                    animation-timing-function: linear;
-                }
-
                 .botao-clientes {
-                    @include botao($azul)
+                    @include botao($azul);
                 }
             }
         }
     }
+}
     
     img {
         width: 400px;
@@ -152,7 +131,7 @@ html{
         @include card($verde)
     }
     
- }
+}
 
 #sobre{
     .container{

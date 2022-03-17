@@ -161,13 +161,13 @@ html {
   background-color: #279F84;
   padding: 0.6em 2em;
   border-radius: 5px;
+  position: relative;
   font-size: 1em;
   font-family: "Quicksand", sans-serif;
   line-height: 180%;
   text-decoration: none;
   color: #ffffff;
   font-size: 1.2em;
-  position: relative;
 }
 
 #introducao .container .texto_introducao .container_botoes .botao-contato::before {
@@ -182,31 +182,67 @@ html {
   left: 0%;
   bottom: 5%;
   right: 0%;
+  -webkit-filter: opacity(0.1);
+          filter: opacity(0.1);
+  -webkit-transition: none;
+  transition: none;
+}
+
+#introducao .container .texto_introducao .container_botoes .botao-contato:hover::before {
   -webkit-animation-duration: 6s;
           animation-duration: 6s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-filter: opacity(0.1);
-          filter: opacity(0.1);
-}
-
-#introducao .container .texto_introducao .container_botoes .botao-contato:hover {
   -webkit-animation-name: geleca;
           animation-name: geleca;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
-#introducao .container .texto_introducao .container_botoes .botao-clientes {
+#introducao .container .texto_introducao .container_botoes .botao-contato .botao-clientes {
   background-color: #317FC1;
   padding: 0.6em 2em;
   border-radius: 5px;
+  position: relative;
   font-size: 1em;
   font-family: "Quicksand", sans-serif;
   line-height: 180%;
   text-decoration: none;
   color: #ffffff;
   font-size: 1.2em;
+}
+
+#introducao .container .texto_introducao .container_botoes .botao-contato .botao-clientes::before {
+  border-radius: 30% 70% 72% 28% / 0% 0% 100% 100%;
+  background-color: #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  bottom: 5%;
+  right: 0%;
+  -webkit-filter: opacity(0.1);
+          filter: opacity(0.1);
+  -webkit-transition: none;
+  transition: none;
+}
+
+#introducao .container .texto_introducao .container_botoes .botao-contato .botao-clientes:hover::before {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: geleca;
+          animation-name: geleca;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 #introducao img {
