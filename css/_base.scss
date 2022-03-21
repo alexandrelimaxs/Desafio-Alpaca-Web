@@ -226,14 +226,10 @@ $font-size-card-corpo: 0.9em;
         bottom: 5%;
         right: 0%;
         filter: opacity(0.1);
-        transition: none;
-        // animation-play-state: paused;
+        animation: geleca 5s linear infinite;
+        animation-play-state: paused;
     }
     &:hover::before {
-        animation-duration: 6s;
-        animation-iteration-count: infinite;
-        animation-name: geleca;
-        animation-timing-function: linear;
         animation-play-state: running;
     }
 }
