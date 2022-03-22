@@ -125,7 +125,7 @@ $font-size-card-corpo: 0.9em;
 
 @mixin card ($cor) {
     
-    background-image: linear-gradient(to right bottom,$cor 10%, $branco 10%);
+    background-image: linear-gradient(to right bottom,$cor 9.9%, $branco 10%);
 
     background-size: 100% 100%;
     transition: background-size 0.5s ease-in-out;
